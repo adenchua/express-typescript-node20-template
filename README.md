@@ -13,6 +13,7 @@ It includes the following:
 | Changelog  | documents all feature changes in this `CHANGELOG.md` file                                       |
 | Helmet     | Secures the app by modifying HTTP response headers.                                             |
 | Morgan     | Logging library for every api request made by clients                                           |
+| Swagger-UI | loads up api specification (from `/docs/openapi.yaml` file) in the UI                           |
 
 ## Folder Structure
 
@@ -30,12 +31,12 @@ Client <-> Router Layer <-> Service Layer <-> Data Access Layer <-> Database
 
 The current folder structure is structured as follows:
 
-| Layer       | Folder        | Explanation                                                                                                                                                                                                                  |
-| ----------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Router      | `/routes`     | describes all available API endpoints for clients to interact with the server                                                                                                                                                |
-| Router      | `/controller` | delegates complex business logic tasks to the service layer                                                                                                                                                                  |
-| Service     | `/services`   | contains business logic for the application                                                                                                                                                                                  |
-| Data access | `/models`     | abstracts database code for the service layer to interact with. Usually contains ORM libraries for CRUD operations with the database. The folder name can be changed to `/database` or `/data-access` if it makes more sense |
+| Layer       | Folder        | Explanation                                                                                                                           |
+| ----------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Router      | `/routes`     | maps API endpoints to their respective controllers                                                                                    |
+| Router      | `/controller` | performs data validation and parsing before forwarding it to service methods                                                          |
+| Service     | `/services`   | contains business logic for the application                                                                                           |
+| Data access | `/models`     | abstracts database code for the service layer to interact with. Usually contains ORM libraries for CRUD operations with the database. |
 
 Other folders that are included in this repository include:
 
@@ -45,5 +46,6 @@ Other folders that are included in this repository include:
 | `/interfaces`  | typescript interfaces that are shared is stored in this folder                                                     |
 | `/middlewares` | generic middlewares such as validation, error handling, authentication that are shared is stored in this folder    |
 | `/utils`       | utility functions that are shared are stored in this folder                                                        |
+| `/docs`        | folder to store all documentation, including api specification                                                     |
 
 File examples are stored in each folder described above, each marked with `/** <-- DELETE THIS FILE --> */` comment at the top of the file. Delete these files or modify them accordingly when needed.
