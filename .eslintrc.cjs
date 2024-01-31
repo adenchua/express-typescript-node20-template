@@ -32,6 +32,14 @@ module.exports = {
     "@stylistic/indent": [1, 2],
     "@stylistic/no-tabs": 1,
     "@stylistic/linebreak-style": [1, "unix"],
+    "@typescript-eslint/no-misused-promises": [
+      2,
+      {
+        checksVoidReturn: {
+          arguments: false,
+        },
+      },
+    ],
   },
   parserOptions: {
     sourceType: "module",

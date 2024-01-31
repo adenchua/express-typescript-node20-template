@@ -2,7 +2,7 @@
 import { User } from "../interfaces/User";
 
 /**
- * Interacts with the database directly for User index operations
+ * Interacts with the "database" directly for User index/table operations
  */
 export class UserModel {
   static read(id: string): User {

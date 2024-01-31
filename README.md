@@ -12,6 +12,7 @@ It includes the following:
 | Nodemon    | code change listener to automatically restart a server upon file changes                        |
 | Changelog  | documents all feature changes in this `CHANGELOG.md` file                                       |
 | Helmet     | Secures the app by modifying HTTP response headers.                                             |
+| Morgan     | Logging library for every api request made by clients                                           |
 
 ## Folder Structure
 

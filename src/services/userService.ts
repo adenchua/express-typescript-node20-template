@@ -8,7 +8,7 @@ import { sleep } from "../utils/sleep";
  * @returns a list of users
  */
 const fetchUsers = async (): Promise<User[]> => {
-  await sleep(5000);
+  await sleep(1000);
   return UserModel.readMany();
 };
 
@@ -17,7 +17,7 @@ const fetchUsers = async (): Promise<User[]> => {
  * @returns a user
  */
 const fetchUserById = async (id: string): Promise<User> => {
-  await sleep(5000);
+  await sleep(1000);
   return UserModel.read(id);
 };
 
