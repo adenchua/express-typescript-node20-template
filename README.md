@@ -11,6 +11,7 @@ It includes the following:
 | Prettier   | default code formatter to ensure consistent code formatting across developers                   |
 | Nodemon    | code change listener to automatically restart a server upon file changes                        |
 | Changelog  | documents all feature changes in this `CHANGELOG.md` file                                       |
+| Helmet     | Secures the app by modifying HTTP response headers.                                             |
 
 ## Folder Structure
 
