@@ -1,5 +1,10 @@
 # Changelog
 
+```
+Note: this is a changelog template for your project.
+The official changelog for the template is documented in `README.md` file
+```
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),

@@ -49,3 +49,13 @@ Other folders that are included in this repository include:
 | `/docs`        | folder to store all documentation, including api specification                                                     |
 
 File examples are stored in each folder described above, each marked with `/** <-- DELETE THIS FILE --> */` comment at the top of the file. Delete these files or modify them accordingly when needed.
+
+## API Documentation
+
+OpenAPI documentation (together with Swagger-UI) is added to this template for developers to describe their API specifications. The specification follows **[OpenAPI Specification version 3.1.0](https://spec.openapis.org/oas/v3.1.0)** definition.
+
+The document is stored at `./src/docs/openapi.yaml`. After modification, restart your server to see the changes from Swagger UI at `/docs` endpoint
+
+## Changelog
+
+There are currently no changes to this template
