@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "npx tsc && mkdir -p dist/docs && cp ./src/docs/openapi.yaml dist/docs",
+    "build": "npx tsc",
     "start:prod": "set NODE_ENV=production && node dist/index.js",
     "start:dev": "nodemon src/index.ts",
     "lint": "eslint src/**/* --ext .js,.ts",
