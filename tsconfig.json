@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "moduleResolution": "node",
-    "module": "CommonJS",
+    "module": "CommonJS"
   },
-  "include": ["**/*.ts", "**/*.eslintrc.cjs"],
+  "include": ["**/*.ts", "**/*.eslintrc.cjs"]
 }
